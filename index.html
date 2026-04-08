@@ -3,663 +3,344 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brainxed — 아기 첫 이유식 101 체크리스트</title>
+<title>Brainxed — Baby Food Checklist 101</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@700;900&display=swap" rel="stylesheet">
 <style>
-:root {
-  --cream: #FAFAF7;
-  --ink: #1A1A18;
-  --ink2: #5C5C52;
-  --ink3: #9C9C8E;
-  --border: #E8E8E0;
-  --green: #2D6A4F;
-  --green-bg: #D8F3DC;
-  --green-light: #F0FAF2;
-  --orange: #B5451B;
-  --orange-bg: #FDEBD0;
-  --orange-light: #FEF6ED;
-  --blue: #1B4F8A;
-  --blue-bg: #DBE9FF;
-  --blue-light: #EEF4FF;
-  --red: #C0392B;
-  --red-bg: #FDECEB;
-  --red-light: #FEF5F5;
-  --purple: #5B3FA6;
-  --purple-bg: #EDE9FF;
-  --purple-light: #F6F4FF;
-  --amber: #92540A;
-  --amber-bg: #FEF3E2;
-  --gray: #F5F5F0;
-  --white: #FFFFFF;
+:root{
+  --cream:#FAFAF7;--ink:#1A1A18;--ink2:#5C5C52;--ink3:#9C9C8E;--border:#E8E8E0;
+  --green:#2D6A4F;--green-bg:#D8F3DC;--green-light:#F0FAF2;
+  --orange:#B5451B;--orange-bg:#FDEBD0;--orange-light:#FEF6ED;
+  --blue:#1B4F8A;--blue-bg:#DBE9FF;--blue-light:#EEF4FF;
+  --red:#C0392B;--red-bg:#FDECEB;--red-light:#FEF5F5;
+  --purple:#5B3FA6;--purple-bg:#EDE9FF;--purple-light:#F6F4FF;
+  --amber:#92540A;--amber-bg:#FEF3E2;--gray:#F5F5F0;--white:#FFF;
 }
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Noto Sans KR',sans-serif;background:var(--cream);color:var(--ink);}
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+.hero{background:var(--ink);color:var(--cream);padding:44px 32px 36px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:240px;height:240px;border-radius:50%;background:rgba(45,106,79,0.18);}
+.hero-inner{max-width:840px;margin:0 auto;position:relative;z-index:1;}
+.hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#A8D5B5;margin-bottom:14px;}
+.hero-title{font-family:'Noto Serif KR',serif;font-size:clamp(24px,5vw,40px);font-weight:900;line-height:1.2;margin-bottom:10px;}
+.hero-title span{color:#6EE89A;}
+.hero-sub{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:20px;max-width:500px;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:7px;}
+.hbadge{font-size:11px;font-weight:700;padding:4px 11px;border-radius:999px;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.75);background:rgba(255,255,255,0.07);}
 
-body {
-  font-family: 'Noto Sans KR', sans-serif;
-  background: var(--cream);
-  color: var(--ink);
-  min-height: 100vh;
-}
+.free-bar{background:linear-gradient(135deg,#D8F3DC,#DBE9FF);border-bottom:1px solid rgba(45,106,79,0.15);padding:11px 32px;}
+.free-bar-inner{max-width:840px;margin:0 auto;font-size:13px;color:var(--green);font-weight:600;}
 
-/* ── HERO ── */
-.hero {
-  background: var(--ink);
-  color: var(--cream);
-  padding: 48px 32px 40px;
-  position: relative;
-  overflow: hidden;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -60px; right: -60px;
-  width: 260px; height: 260px;
-  border-radius: 50%;
-  background: rgba(45,106,79,0.2);
-}
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: -40px; left: 40px;
-  width: 160px; height: 160px;
-  border-radius: 50%;
-  background: rgba(181,69,27,0.15);
-}
-.hero-inner { max-width: 860px; margin: 0 auto; position: relative; z-index: 1; }
-.hero-eyebrow {
-  font-size: 11px; font-weight: 700;
-  letter-spacing: 0.16em; text-transform: uppercase;
-  color: #A8D5B5; margin-bottom: 14px;
-}
-.hero-title {
-  font-family: 'Noto Serif KR', serif;
-  font-size: clamp(26px, 5vw, 42px);
-  font-weight: 900;
-  line-height: 1.2;
-  margin-bottom: 12px;
-}
-.hero-title span { color: #6EE89A; }
-.hero-sub {
-  font-size: 14px;
-  color: rgba(255,255,255,0.65);
-  line-height: 1.7;
-  margin-bottom: 24px;
-  max-width: 560px;
-}
-.hero-badges { display: flex; flex-wrap: wrap; gap: 8px; }
-.hbadge {
-  font-size: 11px; font-weight: 700;
-  padding: 5px 12px; border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.2);
-  color: rgba(255,255,255,0.8);
-  background: rgba(255,255,255,0.08);
-}
+.controls{background:var(--white);border-bottom:1px solid var(--border);padding:13px 32px;position:sticky;top:0;z-index:100;}
+.ctrl-inner{max-width:840px;margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.prog-wrap{display:flex;align-items:center;gap:10px;flex:1;min-width:180px;}
+.prog-label{font-size:13px;font-weight:700;white-space:nowrap;}
+.prog-bar{flex:1;height:8px;background:var(--border);border-radius:4px;overflow:hidden;}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--green),#6EE89A);border-radius:4px;transition:width 0.4s ease;width:0%;}
+.prog-count{font-size:12px;font-weight:700;color:var(--green);white-space:nowrap;}
+.rst-btn{font-size:12px;font-weight:700;padding:6px 13px;border-radius:7px;border:1px solid var(--border);background:var(--cream);color:var(--ink2);cursor:pointer;font-family:'Noto Sans KR',sans-serif;}
 
-/* ── CONTROLS ── */
-.controls {
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
-  padding: 16px 32px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-.controls-inner { max-width: 860px; margin: 0 auto; width: 100%; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-.progress-wrap { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 200px; }
-.progress-label { font-size: 13px; font-weight: 700; color: var(--ink); white-space: nowrap; }
-.progress-bar { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
-.progress-fill { height: 100%; background: linear-gradient(90deg, var(--green), #6EE89A); border-radius: 4px; transition: width 0.4s ease; }
-.progress-count { font-size: 12px; font-weight: 700; color: var(--green); white-space: nowrap; }
-.ctrl-btns { display: flex; gap: 8px; }
-.ctrl-btn {
-  font-size: 12px; font-weight: 700; padding: 7px 14px;
-  border-radius: 8px; border: 1px solid var(--border);
-  background: var(--cream); color: var(--ink2);
-  cursor: pointer; transition: all 0.15s;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-.ctrl-btn:hover { background: var(--gray); }
-.ctrl-btn.print { background: var(--ink); color: var(--cream); border-color: var(--ink); }
-.ctrl-btn.print:hover { background: #333; }
+.main{max-width:840px;margin:0 auto;padding:28px 32px 40px;}
 
-/* ── MAIN ── */
-.main { max-width: 860px; margin: 0 auto; padding: 32px; }
+.age-banner{background:linear-gradient(135deg,#D8F3DC,#DBE9FF);border-radius:12px;padding:14px 18px;margin-bottom:20px;font-size:13px;color:var(--ink2);line-height:1.7;border:1px solid rgba(45,106,79,0.12);}
 
-/* ── AGE BANNER ── */
-.age-banner {
-  background: linear-gradient(135deg, #D8F3DC, #DBE9FF);
-  border-radius: 14px;
-  padding: 16px 20px;
-  margin-bottom: 24px;
-  font-size: 13px;
-  color: var(--ink2);
-  line-height: 1.7;
-  border: 1px solid rgba(45,106,79,0.15);
-}
-.age-banner strong { color: var(--green); font-weight: 700; }
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px;}
+.leg{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--ink2);background:var(--white);border:1px solid var(--border);border-radius:7px;padding:4px 9px;}
+.leg-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
 
-/* ── COLOR LEGEND ── */
-.legend {
-  display: flex; flex-wrap: wrap; gap: 8px;
-  margin-bottom: 24px;
-}
-.legend-item {
-  display: flex; align-items: center; gap: 6px;
-  font-size: 12px; color: var(--ink2);
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 6px 12px;
-}
-.legend-dot {
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
+.section{margin-bottom:22px;}
+.sec-head{display:flex;align-items:center;gap:9px;margin-bottom:9px;}
+.sec-icon{font-size:18px;}
+.sec-title{font-family:'Noto Serif KR',serif;font-size:16px;font-weight:700;}
+.sec-count{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:auto;}
 
-/* ── SECTION ── */
-.section { margin-bottom: 28px; }
-.section-header {
-  display: flex; align-items: center; gap: 10px;
-  margin-bottom: 12px;
-}
-.section-icon { font-size: 20px; }
-.section-title {
-  font-family: 'Noto Serif KR', serif;
-  font-size: 17px; font-weight: 700;
-  color: var(--ink);
-}
-.section-count {
-  font-size: 11px; font-weight: 700;
-  padding: 2px 8px; border-radius: 999px;
-  margin-left: auto;
-}
+.food-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:5px;}
+.fi{display:flex;align-items:center;gap:7px;padding:8px 10px;border-radius:9px;border:1.5px solid transparent;cursor:pointer;transition:all 0.15s;user-select:none;position:relative;}
+.fi:hover{transform:translateY(-1px);}
+.fi.checked{border-color:var(--green)!important;}
+.cf{background:#FEF8F5;border-color:#F5D5C5;}.cf:hover{background:#FEF0E8;}.cf.checked{background:var(--green-light);}
+.cv{background:var(--green-light);border-color:#C5E8CA;}.cv:hover{background:#E0F5E4;}.cv.checked{background:#C5E8CA;}
+.cp{background:var(--orange-light);border-color:#F5D8C5;}.cp:hover{background:#FEE8D8;}.cp.checked{background:#FAD5BE;}
+.cg{background:var(--amber-bg);border-color:#F0D5A0;}.cg:hover{background:#FDE8C0;}.cg.checked{background:#F0D5A0;}
+.cd{background:var(--blue-light);border-color:#C5D8F0;}.cd:hover{background:#D8E8FF;}.cd.checked{background:#C5D8F0;}
+.ca{background:var(--red-light);border-color:#F5C5C0;}.ca:hover{background:#FDE8E5;}.ca.checked{background:#F5C5C0;}
+.cs{background:var(--purple-light);border-color:#D5C8F5;}.cs:hover{background:#E8E0FF;}.cs.checked{background:#D5C8F5;}
 
-/* ── FOOD GRID ── */
-.food-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 6px;
-}
+.fchk{width:18px;height:18px;border-radius:5px;border:2px solid var(--border);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all 0.15s;background:var(--white);}
+.fi.checked .fchk{background:var(--green);border-color:var(--green);}
+.fi.checked .fchk::after{content:'✓';color:white;font-size:11px;font-weight:700;}
+.fe{font-size:15px;flex-shrink:0;}
+.fn{flex:1;min-width:0;}
+.fn-kr{font-size:12px;font-weight:600;color:var(--ink);line-height:1.3;}
+.fn-en{font-size:10px;color:var(--ink3);margin-top:1px;}
+.fage{font-size:9px;font-weight:700;padding:1px 5px;border-radius:4px;position:absolute;top:4px;right:4px;}
+.a6{background:var(--green-bg);color:var(--green);}
+.a8{background:var(--amber-bg);color:var(--amber);}
+.a12{background:var(--red-bg);color:var(--red);}
 
-/* ── FOOD ITEM ── */
-.food-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 12px;
-  border-radius: 10px;
-  border: 1.5px solid transparent;
-  cursor: pointer;
-  transition: all 0.15s;
-  user-select: none;
-  position: relative;
-}
-.food-item:hover { transform: translateY(-1px); }
-.food-item.checked { border-color: var(--green) !important; }
+.allergy-note{background:var(--red-light);border:1px solid #F5C5C0;border-radius:10px;padding:12px 16px;margin-bottom:9px;font-size:13px;color:var(--red);line-height:1.7;}
 
-/* Category colors */
-.cat-fruit { background: #FEF8F5; border-color: #F5D5C5; }
-.cat-fruit:hover { background: #FEF0E8; }
-.cat-fruit.checked { background: var(--green-light); }
+/* LOCKED */
+.locked{background:var(--white);border:2px dashed var(--border);border-radius:14px;padding:22px;margin:26px 0;text-align:center;position:relative;overflow:hidden;}
+.locked-blur{filter:blur(4px);opacity:0.35;pointer-events:none;margin-bottom:14px;}
+.locked-blur .food-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:4px;}
+.locked-blur .fi{background:var(--gray);border-color:var(--border);}
+.locked-overlay{position:relative;z-index:2;}
+.locked-overlay::before{content:'';position:absolute;left:0;right:0;top:-70px;height:70px;background:linear-gradient(to bottom,transparent,var(--white));pointer-events:none;}
+.locked-title{font-family:'Noto Serif KR',serif;font-size:17px;font-weight:700;margin-bottom:6px;}
+.locked-sub{font-size:13px;color:var(--ink2);line-height:1.6;margin-bottom:14px;}
+.locked-tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:6px;}
+.ltag{font-size:12px;font-weight:600;padding:4px 12px;border-radius:999px;background:var(--green-bg);color:var(--green);border:1px solid #9FE1CB;}
 
-.cat-veg { background: var(--green-light); border-color: #C5E8CA; }
-.cat-veg:hover { background: #E0F5E4; }
-.cat-veg.checked { background: #C5E8CA; }
+/* AVOID */
+.avoid-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:6px;margin-bottom:6px;}
+.avoid-item{background:var(--red-light);border:1px solid #F5C5C0;border-radius:8px;padding:8px 11px;font-size:12px;color:var(--red);display:flex;gap:7px;}
+.avoid-emoji{font-size:14px;flex-shrink:0;}
+.avoid-name{font-weight:700;margin-bottom:1px;font-size:12px;}
+.avoid-reason{font-size:11px;opacity:0.8;line-height:1.4;}
 
-.cat-protein { background: var(--orange-light); border-color: #F5D8C5; }
-.cat-protein:hover { background: #FEE8D8; }
-.cat-protein.checked { background: #FAD5BE; }
+/* CTA */
+.cta{background:var(--ink);color:var(--cream);border-radius:16px;padding:26px 28px;margin-top:26px;}
+.cta-eye{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8D5B5;margin-bottom:9px;}
+.cta-title{font-family:'Noto Serif KR',serif;font-size:19px;font-weight:700;margin-bottom:7px;line-height:1.3;}
+.cta-sub{font-size:13px;color:rgba(255,255,255,0.58);line-height:1.7;margin-bottom:18px;}
+.cta-steps{display:flex;flex-direction:column;gap:7px;margin-bottom:18px;}
+.cta-step{display:flex;align-items:center;gap:9px;font-size:13px;color:rgba(255,255,255,0.8);}
+.cta-step-n{width:23px;height:23px;border-radius:50%;background:rgba(110,232,154,0.12);border:1px solid rgba(110,232,154,0.25);color:#6EE89A;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.cta-handle{display:inline-block;background:rgba(110,232,154,0.08);border:1px solid rgba(110,232,154,0.22);border-radius:8px;padding:9px 16px;font-size:15px;font-weight:700;color:#6EE89A;}
+.cta-note{font-size:11px;color:rgba(255,255,255,0.35);margin-top:9px;}
 
-.cat-grain { background: var(--amber-bg); border-color: #F0D5A0; }
-.cat-grain:hover { background: #FDE8C0; }
-.cat-grain.checked { background: #F0D5A0; }
+.footer{max-width:840px;margin:0 auto;padding:16px 32px 32px;font-size:12px;color:var(--ink3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;border-top:1px solid var(--border);}
+.footer-brand{font-family:'Noto Serif KR',serif;font-weight:700;color:var(--green);}
 
-.cat-dairy { background: var(--blue-light); border-color: #C5D8F0; }
-.cat-dairy:hover { background: #D8E8FF; }
-.cat-dairy.checked { background: #C5D8F0; }
-
-.cat-allergy { background: var(--red-light); border-color: #F5C5C0; }
-.cat-allergy:hover { background: #FDE8E5; }
-.cat-allergy.checked { background: #F5C5C0; }
-
-.cat-spice { background: var(--purple-light); border-color: #D5C8F5; }
-.cat-spice:hover { background: #E8E0FF; }
-.cat-spice.checked { background: #D5C8F5; }
-
-/* Checkbox */
-.food-check {
-  width: 20px; height: 20px;
-  border-radius: 6px;
-  border: 2px solid var(--border);
-  flex-shrink: 0;
-  display: flex; align-items: center; justify-content: center;
-  transition: all 0.15s;
-  background: var(--white);
-}
-.food-item.checked .food-check {
-  background: var(--green);
-  border-color: var(--green);
-}
-.food-item.checked .food-check::after {
-  content: '✓';
-  color: white;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.food-emoji { font-size: 16px; flex-shrink: 0; }
-
-.food-info { flex: 1; min-width: 0; }
-.food-name { font-size: 12px; font-weight: 600; color: var(--ink); line-height: 1.3; }
-.food-name-en { font-size: 10px; color: var(--ink3); margin-top: 1px; }
-
-/* Age badge on food */
-.food-age {
-  font-size: 9px; font-weight: 700;
-  padding: 1px 5px; border-radius: 4px;
-  position: absolute;
-  top: 5px; right: 5px;
-}
-.age-6 { background: var(--green-bg); color: var(--green); }
-.age-8 { background: var(--amber-bg); color: var(--amber); }
-.age-12 { background: var(--red-bg); color: var(--red); }
-
-/* ── ALLERGY SECTION ── */
-.allergy-note {
-  background: var(--red-light);
-  border: 1px solid #F5C5C0;
-  border-radius: 12px;
-  padding: 14px 16px;
-  margin-bottom: 12px;
-  font-size: 13px;
-  color: var(--red);
-  line-height: 1.7;
-}
-
-/* ── AVOID SECTION ── */
-.avoid-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 8px;
-  margin-bottom: 8px;
-}
-.avoid-item {
-  background: var(--red-light);
-  border: 1px solid #F5C5C0;
-  border-radius: 10px;
-  padding: 10px 12px;
-  font-size: 12px;
-  color: var(--red);
-  display: flex;
-  gap: 8px;
-  align-items: flex-start;
-}
-.avoid-emoji { font-size: 16px; flex-shrink: 0; }
-.avoid-name { font-weight: 700; margin-bottom: 2px; }
-.avoid-reason { font-size: 11px; opacity: 0.8; line-height: 1.4; }
-
-/* ── CTA ── */
-.cta-box {
-  background: var(--ink);
-  color: var(--cream);
-  border-radius: 16px;
-  padding: 24px 28px;
-  margin-top: 32px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.cta-text { flex: 1; min-width: 200px; }
-.cta-title { font-family: 'Noto Serif KR', serif; font-size: 17px; font-weight: 700; margin-bottom: 6px; }
-.cta-body { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.6; }
-.cta-tag {
-  background: rgba(110,232,154,0.15);
-  border: 1px solid rgba(110,232,154,0.3);
-  border-radius: 10px;
-  padding: 12px 18px;
-  font-size: 13px;
-  color: #6EE89A;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-/* ── FOOTER ── */
-.footer {
-  max-width: 860px; margin: 0 auto;
-  padding: 20px 32px 40px;
-  font-size: 12px;
-  color: var(--ink3);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 8px;
-  border-top: 1px solid var(--border);
-}
-.footer-brand { font-family: 'Noto Serif KR', serif; font-weight: 700; color: var(--green); }
-
-/* ── PRINT ── */
-@media print {
-  .controls, .cta-box, .footer { display: none !important; }
-  .hero { padding: 24px !important; }
-  .main { padding: 16px !important; }
-  body { background: white; }
-  .food-item { break-inside: avoid; }
-}
-
-@media (max-width: 600px) {
-  .hero { padding: 32px 20px 28px; }
-  .main { padding: 20px 16px; }
-  .controls { padding: 12px 16px; }
-  .food-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+@media(max-width:600px){
+  .hero,.free-bar,.controls,.main{padding-left:16px;padding-right:16px;}
+  .food-grid{grid-template-columns:repeat(auto-fill,minmax(128px,1fr));}
 }
 </style>
 </head>
 <body>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">Brainxed · Boston Pediatrician Standard</div>
-    <div class="hero-title">아기 첫 이유식<br><span>101가지</span> 체크리스트</div>
-    <div class="hero-sub">
-      보스턴 소아과 기준 + 미국 AAP 2022~2025 권고를 반영했어요.<br>
-      리엄이든과 함께 직접 테스트한 순서예요.
-    </div>
+    <div class="hero-eyebrow">Brainxed</div>
+    <div class="hero-title">Baby Food<br><span>Checklist 101</span></div>
+    <div class="hero-sub">보스턴 소아과 기준 · AAP 2022~2025 반영<br>아기 첫 이유식, 뭘 언제 줄 수 있는지 한눈에.</div>
     <div class="hero-badges">
       <span class="hbadge">👶🏻 생후 6개월+</span>
       <span class="hbadge">🇺🇸 보스턴 소아과 기준</span>
-      <span class="hbadge">📋 AAP 2022~2025 반영</span>
+      <span class="hbadge">📋 AAP 2022~2025</span>
       <span class="hbadge">🥜 8대 알러지 포함</span>
-      <span class="hbadge">🧪 쌍둥이 검증</span>
     </div>
   </div>
 </div>
 
-<!-- CONTROLS -->
+<div class="free-bar">
+  <div class="free-bar-inner">🔓 무료 공개 버전 (50가지) — 전체 101가지 + 조리법 + 실제 기록은 인스타그램 DM으로</div>
+</div>
+
 <div class="controls">
-  <div class="controls-inner">
-    <div class="progress-wrap">
-      <span class="progress-label">진행도</span>
-      <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
-      <span class="progress-count" id="progressCount">0 / 101</span>
+  <div class="ctrl-inner">
+    <div class="prog-wrap">
+      <span class="prog-label">진행도</span>
+      <div class="prog-bar"><div class="prog-fill" id="pf"></div></div>
+      <span class="prog-count" id="pc">0 / 50</span>
     </div>
-    <div class="ctrl-btns">
-      <button class="ctrl-btn" onclick="resetAll()">초기화</button>
-      <button class="ctrl-btn print" onclick="window.print()">🖨️ 출력</button>
-    </div>
+    <button class="rst-btn" onclick="resetAll()">초기화</button>
   </div>
 </div>
 
-<!-- MAIN -->
 <div class="main">
 
-  <!-- AGE BANNER -->
   <div class="age-banner">
-    <strong>📌 월령별 기준</strong> — 이 체크리스트는 생후 6개월+ 기준이에요.<br>
-    <strong style="color:var(--green);">초록 6+</strong> = 6개월부터 OK &nbsp;·&nbsp;
-    <strong style="color:var(--amber);">주황 8+</strong> = 8개월 이후 권장 &nbsp;·&nbsp;
+    <strong style="color:var(--green);">📌 월령별 기준</strong> &nbsp;|&nbsp;
+    <strong style="color:var(--green);">초록 6+</strong> = 6개월부터 &nbsp;·&nbsp;
+    <strong style="color:var(--amber);">주황 8+</strong> = 8개월 이후 &nbsp;·&nbsp;
     <strong style="color:var(--red);">빨강 12+</strong> = 12개월 이후<br>
-    하루에 새 재료 하나씩 · 2~3일 반복 · 알러지 약 미리 처방받기
+    하루 새 재료 하나씩 · 2~3일 반복 · 알러지 약 소아과에서 미리 처방받기
   </div>
 
-  <!-- LEGEND -->
   <div class="legend">
-    <div class="legend-item"><div class="legend-dot" style="background:#F5A07A;"></div>과일</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#5DBB7A;"></div>채소</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#E8804A;"></div>단백질</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#D4A84B;"></div>곡물</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#5A90D4;"></div>유제품</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#D45A5A;"></div>알러지 8대</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#8B6FD4;"></div>향신료·오일</div>
+    <div class="leg"><div class="leg-dot" style="background:#F5A07A;"></div>과일</div>
+    <div class="leg"><div class="leg-dot" style="background:#5DBB7A;"></div>채소</div>
+    <div class="leg"><div class="leg-dot" style="background:#E8804A;"></div>단백질</div>
+    <div class="leg"><div class="leg-dot" style="background:#D4A84B;"></div>곡물</div>
+    <div class="leg"><div class="leg-dot" style="background:#5A90D4;"></div>유제품</div>
+    <div class="leg"><div class="leg-dot" style="background:#D45A5A;"></div>8대 알러지</div>
+    <div class="leg"><div class="leg-dot" style="background:#8B6FD4;"></div>향신료·오일</div>
   </div>
 
-  <!-- 1. 과일 -->
+  <!-- 과일 8 -->
   <div class="section">
-    <div class="section-header">
-      <span class="section-icon">🍎</span>
-      <span class="section-title">과일</span>
-      <span class="section-count" style="background:var(--orange-bg);color:var(--orange);">18가지</span>
-    </div>
+    <div class="sec-head"><span class="sec-icon">🍎</span><span class="sec-title">과일</span><span class="sec-count" style="background:var(--orange-bg);color:var(--orange);">8가지 공개</span></div>
     <div class="food-grid">
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥑</span><div class="food-info"><div class="food-name">아보카도</div><div class="food-name-en">Avocado</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍌</span><div class="food-info"><div class="food-name">바나나</div><div class="food-name-en">Banana</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍐</span><div class="food-info"><div class="food-name">배</div><div class="food-name-en">Pear</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍑</span><div class="food-info"><div class="food-name">복숭아</div><div class="food-name-en">Peach</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍈</span><div class="food-info"><div class="food-name">멜론</div><div class="food-name-en">Melon</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍠</span><div class="food-info"><div class="food-name">자두</div><div class="food-name-en">Prune/Plum</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍇</span><div class="food-info"><div class="food-name">포도 (잘라서)</div><div class="food-name-en">Grape (halved)</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍓</span><div class="food-info"><div class="food-name">딸기</div><div class="food-name-en">Strawberry</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫐</span><div class="food-info"><div class="food-name">블루베리</div><div class="food-name-en">Blueberry</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥭</span><div class="food-info"><div class="food-name">망고</div><div class="food-name-en">Mango</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍍</span><div class="food-info"><div class="food-name">파인애플</div><div class="food-name-en">Pineapple</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍋</span><div class="food-info"><div class="food-name">키위</div><div class="food-name-en">Kiwi</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍒</span><div class="food-info"><div class="food-name">체리 (씨 제거)</div><div class="food-name-en">Cherry (pitted)</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍏</span><div class="food-info"><div class="food-name">사과 (쪄서)</div><div class="food-name-en">Apple (steamed)</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍊</span><div class="food-info"><div class="food-name">귤/오렌지</div><div class="food-name-en">Clementine</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫒</span><div class="food-info"><div class="food-name">수박</div><div class="food-name-en">Watermelon</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍈</span><div class="food-info"><div class="food-name">파파야</div><div class="food-name-en">Papaya</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-fruit" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍎</span><div class="food-info"><div class="food-name">자몽</div><div class="food-name-en">Grapefruit</div></div><span class="food-age age-12">12+</span></div>
+      <div class="fi cf" onclick="t(this)"><div class="fchk"></div><span class="fe">🥑</span><div class="fn"><div class="fn-kr">아보카도</div><div class="fn-en">Avocado</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cf" onclick="t(this)"><div class="fchk"></div><span class="fe">🍌</span><div class="fn"><div class="fn-kr">바나나</div><div class="fn-en">Banana</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cf" onclick="t(this)"><div class="fchk"></div><span class="fe">🍐</span><div class="fn"><div class="fn-kr">배</div><div class="fn-en">Pear</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cf" onclick="t(this)"><div class="fchk"></div><span class="fe">🍑</span><div class="fn"><div class="fn-kr">복숭아</div><div class="fn-en">Peach</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cf" onclick="t(this)"><div class="fchk"></div><span class="fe">🫐</span><div class="fn"><div class="fn-kr">블루베리</div><div class="fn-en">Blueberry</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cf" onclick="t(this)"><div class="fchk"></div><span class="fe">🍓</span><div class="fn"><div class="fn-kr">딸기</div><div class="fn-en">Strawberry</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cf" onclick="t(this)"><div class="fchk"></div><span class="fe">🥭</span><div class="fn"><div class="fn-kr">망고</div><div class="fn-en">Mango</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cf" onclick="t(this)"><div class="fchk"></div><span class="fe">🍏</span><div class="fn"><div class="fn-kr">사과 (쪄서)</div><div class="fn-en">Apple steamed</div></div><span class="fage a6">6+</span></div>
     </div>
   </div>
 
-  <!-- 2. 채소 -->
+  <!-- 채소 10 -->
   <div class="section">
-    <div class="section-header">
-      <span class="section-icon">🥦</span>
-      <span class="section-title">채소</span>
-      <span class="section-count" style="background:var(--green-bg);color:var(--green);">22가지</span>
-    </div>
+    <div class="sec-head"><span class="sec-icon">🥦</span><span class="sec-title">채소</span><span class="sec-count" style="background:var(--green-bg);color:var(--green);">10가지 공개</span></div>
     <div class="food-grid">
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥦</span><div class="food-info"><div class="food-name">브로콜리</div><div class="food-name-en">Broccoli</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥕</span><div class="food-info"><div class="food-name">당근</div><div class="food-name-en">Carrot</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🎃</span><div class="food-info"><div class="food-name">땅콩호박</div><div class="food-name-en">Butternut Squash</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍠</span><div class="food-info"><div class="food-name">고구마</div><div class="food-name-en">Sweet Potato</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥔</span><div class="food-info"><div class="food-name">감자</div><div class="food-name-en">Potato</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌽</span><div class="food-info"><div class="food-name">옥수수</div><div class="food-name-en">Corn</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥒</span><div class="food-info"><div class="food-name">오이</div><div class="food-name-en">Cucumber</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍅</span><div class="food-info"><div class="food-name">토마토</div><div class="food-name-en">Tomato</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥬</span><div class="food-info"><div class="food-name">시금치</div><div class="food-name-en">Spinach</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥬</span><div class="food-info"><div class="food-name">케일</div><div class="food-name-en">Kale</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫛</span><div class="food-info"><div class="food-name">완두콩</div><div class="food-name-en">Green Peas</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫛</span><div class="food-info"><div class="food-name">그린빈</div><div class="food-name-en">Green Beans</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍄</span><div class="food-info"><div class="food-name">버섯</div><div class="food-name-en">Mushroom</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫑</span><div class="food-info"><div class="food-name">피망</div><div class="food-name-en">Bell Pepper</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥑</span><div class="food-info"><div class="food-name">아스파라거스</div><div class="food-name-en">Asparagus</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥦</span><div class="food-info"><div class="food-name">콜리플라워</div><div class="food-name-en">Cauliflower</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥦</span><div class="food-info"><div class="food-name">방울양배추</div><div class="food-name-en">Brussels Sprout</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🧅</span><div class="food-info"><div class="food-name">주키니</div><div class="food-name-en">Zucchini</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫚</span><div class="food-info"><div class="food-name">셀러리</div><div class="food-name-en">Celery</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥬</span><div class="food-info"><div class="food-name">비트</div><div class="food-name-en">Beet</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌿</span><div class="food-info"><div class="food-name">가지</div><div class="food-name-en">Eggplant</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-veg" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥬</span><div class="food-info"><div class="food-name">파 (익혀서)</div><div class="food-name-en">Leek</div></div><span class="food-age age-8">8+</span></div>
+      <div class="fi cv" onclick="t(this)"><div class="fchk"></div><span class="fe">🥦</span><div class="fn"><div class="fn-kr">브로콜리</div><div class="fn-en">Broccoli</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cv" onclick="t(this)"><div class="fchk"></div><span class="fe">🥕</span><div class="fn"><div class="fn-kr">당근</div><div class="fn-en">Carrot</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cv" onclick="t(this)"><div class="fchk"></div><span class="fe">🎃</span><div class="fn"><div class="fn-kr">땅콩호박</div><div class="fn-en">Butternut Squash</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cv" onclick="t(this)"><div class="fchk"></div><span class="fe">🍠</span><div class="fn"><div class="fn-kr">고구마</div><div class="fn-en">Sweet Potato</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cv" onclick="t(this)"><div class="fchk"></div><span class="fe">🫛</span><div class="fn"><div class="fn-kr">완두콩</div><div class="fn-en">Green Peas</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cv" onclick="t(this)"><div class="fchk"></div><span class="fe">🍄</span><div class="fn"><div class="fn-kr">버섯</div><div class="fn-en">Mushroom</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cv" onclick="t(this)"><div class="fchk"></div><span class="fe">🥬</span><div class="fn"><div class="fn-kr">시금치</div><div class="fn-en">Spinach</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cv" onclick="t(this)"><div class="fchk"></div><span class="fe">🫑</span><div class="fn"><div class="fn-kr">피망</div><div class="fn-en">Bell Pepper</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cv" onclick="t(this)"><div class="fchk"></div><span class="fe">🥦</span><div class="fn"><div class="fn-kr">콜리플라워</div><div class="fn-en">Cauliflower</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cv" onclick="t(this)"><div class="fchk"></div><span class="fe">🧅</span><div class="fn"><div class="fn-kr">주키니</div><div class="fn-en">Zucchini</div></div><span class="fage a6">6+</span></div>
     </div>
   </div>
 
-  <!-- 3. 단백질 -->
+  <!-- 단백질 8 -->
   <div class="section">
-    <div class="section-header">
-      <span class="section-icon">🥩</span>
-      <span class="section-title">단백질</span>
-      <span class="section-count" style="background:var(--orange-bg);color:var(--orange);">14가지</span>
-    </div>
+    <div class="sec-head"><span class="sec-icon">🥩</span><span class="sec-title">단백질</span><span class="sec-count" style="background:var(--orange-bg);color:var(--orange);">8가지 공개</span></div>
     <div class="food-grid">
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥩</span><div class="food-info"><div class="food-name">소고기 ⭐</div><div class="food-name-en">Beef (철분 1순위)</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍗</span><div class="food-info"><div class="food-name">닭고기</div><div class="food-name-en">Chicken</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🐟</span><div class="food-info"><div class="food-name">흰살생선</div><div class="food-name-en">White Fish</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🐟</span><div class="food-info"><div class="food-name">연어</div><div class="food-name-en">Salmon</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫘</span><div class="food-info"><div class="food-name">두부</div><div class="food-name-en">Tofu</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫘</span><div class="food-info"><div class="food-name">렌틸콩</div><div class="food-name-en">Lentil</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫘</span><div class="food-info"><div class="food-name">검은콩</div><div class="food-name-en">Black Bean</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫘</span><div class="food-info"><div class="food-name">병아리콩</div><div class="food-name-en">Chickpea</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫘</span><div class="food-info"><div class="food-name">에다마메</div><div class="food-name-en">Edamame</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍖</span><div class="food-info"><div class="food-name">돼지고기</div><div class="food-name-en">Pork</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍗</span><div class="food-info"><div class="food-name">칠면조</div><div class="food-name-en">Turkey</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥚</span><div class="food-info"><div class="food-name">달걀 노른자</div><div class="food-name-en">Egg Yolk</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫘</span><div class="food-info"><div class="food-name">후무스</div><div class="food-name-en">Hummus</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-protein" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🐑</span><div class="food-info"><div class="food-name">양고기</div><div class="food-name-en">Lamb</div></div><span class="food-age age-6">6+</span></div>
+      <div class="fi cp" onclick="t(this)"><div class="fchk"></div><span class="fe">🥩</span><div class="fn"><div class="fn-kr">소고기 ⭐</div><div class="fn-en">철분 1순위</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cp" onclick="t(this)"><div class="fchk"></div><span class="fe">🍗</span><div class="fn"><div class="fn-kr">닭고기</div><div class="fn-en">Chicken</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cp" onclick="t(this)"><div class="fchk"></div><span class="fe">🐟</span><div class="fn"><div class="fn-kr">흰살생선</div><div class="fn-en">White Fish</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cp" onclick="t(this)"><div class="fchk"></div><span class="fe">🐟</span><div class="fn"><div class="fn-kr">연어</div><div class="fn-en">Salmon</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cp" onclick="t(this)"><div class="fchk"></div><span class="fe">🫘</span><div class="fn"><div class="fn-kr">두부</div><div class="fn-en">Tofu</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cp" onclick="t(this)"><div class="fchk"></div><span class="fe">🫘</span><div class="fn"><div class="fn-kr">렌틸콩</div><div class="fn-en">Lentil</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cp" onclick="t(this)"><div class="fchk"></div><span class="fe">🫘</span><div class="fn"><div class="fn-kr">병아리콩</div><div class="fn-en">Chickpea</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cp" onclick="t(this)"><div class="fchk"></div><span class="fe">🥚</span><div class="fn"><div class="fn-kr">달걀 노른자</div><div class="fn-en">Egg Yolk</div></div><span class="fage a6">6+</span></div>
     </div>
   </div>
 
-  <!-- 4. 곡물 -->
+  <!-- 곡물 5 -->
   <div class="section">
-    <div class="section-header">
-      <span class="section-icon">🌾</span>
-      <span class="section-title">곡물</span>
-      <span class="section-count" style="background:var(--amber-bg);color:var(--amber);">11가지</span>
-    </div>
+    <div class="sec-head"><span class="sec-icon">🌾</span><span class="sec-title">곡물</span><span class="sec-count" style="background:var(--amber-bg);color:var(--amber);">5가지 공개</span></div>
     <div class="food-grid">
-      <div class="food-item cat-grain" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌾</span><div class="food-info"><div class="food-name">오트밀</div><div class="food-name-en">Oatmeal</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-grain" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍚</span><div class="food-info"><div class="food-name">쌀 (죽)</div><div class="food-name-en">Rice</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-grain" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍞</span><div class="food-info"><div class="food-name">통밀빵</div><div class="food-name-en">Whole Wheat Bread</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-grain" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌾</span><div class="food-info"><div class="food-name">퀴노아</div><div class="food-name-en">Quinoa</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-grain" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌾</span><div class="food-info"><div class="food-name">보리</div><div class="food-name-en">Barley</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-grain" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌾</span><div class="food-info"><div class="food-name">기장</div><div class="food-name-en">Millet</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-grain" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌾</span><div class="food-info"><div class="food-name">아마씨</div><div class="food-name-en">Flaxseed</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-grain" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌾</span><div class="food-info"><div class="food-name">치아씨</div><div class="food-name-en">Chia Seeds</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-grain" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍝</span><div class="food-info"><div class="food-name">파스타</div><div class="food-name-en">Pasta</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-grain" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌾</span><div class="food-info"><div class="food-name">쿠스쿠스</div><div class="food-name-en">Couscous</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-grain" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌾</span><div class="food-info"><div class="food-name">메밀</div><div class="food-name-en">Buckwheat</div></div><span class="food-age age-6">6+</span></div>
+      <div class="fi cg" onclick="t(this)"><div class="fchk"></div><span class="fe">🌾</span><div class="fn"><div class="fn-kr">오트밀</div><div class="fn-en">Oatmeal</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cg" onclick="t(this)"><div class="fchk"></div><span class="fe">🍚</span><div class="fn"><div class="fn-kr">쌀 (죽)</div><div class="fn-en">Rice</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cg" onclick="t(this)"><div class="fchk"></div><span class="fe">🌾</span><div class="fn"><div class="fn-kr">퀴노아</div><div class="fn-en">Quinoa</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cg" onclick="t(this)"><div class="fchk"></div><span class="fe">🌾</span><div class="fn"><div class="fn-kr">아마씨</div><div class="fn-en">Flaxseed</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cg" onclick="t(this)"><div class="fchk"></div><span class="fe">🌾</span><div class="fn"><div class="fn-kr">치아씨</div><div class="fn-en">Chia Seeds</div></div><span class="fage a6">6+</span></div>
     </div>
   </div>
 
-  <!-- 5. 유제품 -->
+  <!-- 유제품 3 -->
   <div class="section">
-    <div class="section-header">
-      <span class="section-icon">🧀</span>
-      <span class="section-title">유제품</span>
-      <span class="section-count" style="background:var(--blue-bg);color:var(--blue);">7가지</span>
-    </div>
+    <div class="sec-head"><span class="sec-icon">🧀</span><span class="sec-title">유제품</span><span class="sec-count" style="background:var(--blue-bg);color:var(--blue);">3가지 공개</span></div>
     <div class="food-grid">
-      <div class="food-item cat-dairy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫙</span><div class="food-info"><div class="food-name">플레인 요거트</div><div class="food-name-en">Plain Yogurt</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-dairy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🧀</span><div class="food-info"><div class="food-name">체다 치즈</div><div class="food-name-en">Cheddar Cheese</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-dairy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🧀</span><div class="food-info"><div class="food-name">파마산 치즈</div><div class="food-name-en">Parmesan</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-dairy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🧀</span><div class="food-info"><div class="food-name">코티지 치즈</div><div class="food-name-en">Cottage Cheese</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-dairy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🧀</span><div class="food-info"><div class="food-name">리코타 치즈</div><div class="food-name-en">Ricotta</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-dairy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥛</span><div class="food-info"><div class="food-name">우유 (요리용)</div><div class="food-name-en">Milk (cooking)</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-dairy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🍮</span><div class="food-info"><div class="food-name">커스타드</div><div class="food-name-en">Custard</div></div><span class="food-age age-8">8+</span></div>
+      <div class="fi cd" onclick="t(this)"><div class="fchk"></div><span class="fe">🫙</span><div class="fn"><div class="fn-kr">플레인 요거트</div><div class="fn-en">Plain Yogurt</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cd" onclick="t(this)"><div class="fchk"></div><span class="fe">🧀</span><div class="fn"><div class="fn-kr">체다 치즈</div><div class="fn-en">Cheddar Cheese</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cd" onclick="t(this)"><div class="fchk"></div><span class="fe">🧀</span><div class="fn"><div class="fn-kr">코티지 치즈</div><div class="fn-en">Cottage Cheese</div></div><span class="fage a6">6+</span></div>
     </div>
   </div>
 
-  <!-- 6. 8대 알러지 -->
+  <!-- 알러지 8 전체 공개 -->
   <div class="section">
-    <div class="section-header">
-      <span class="section-icon">⚠️</span>
-      <span class="section-title">8대 알러지 — 일찍 줄수록 예방에 도움</span>
-      <span class="section-count" style="background:var(--red-bg);color:var(--red);">8가지</span>
-    </div>
-    <div class="allergy-note">
-      🇺🇸 보스턴 소아과 기준 — "일찍 노출할수록 알러지 예방에 도움된다"<br>
-      하루에 하나씩 · 반응 없으면 2~3일 후 다음 재료 · 알러지 약 미리 처방받기 필수<br>
-      <strong>리엄이가 달걀 12일차에 반응했어요 — 약이 있어서 다행이었어요.</strong>
-    </div>
+    <div class="sec-head"><span class="sec-icon">⚠️</span><span class="sec-title">8대 알러지 — 일찍 줄수록 예방에 도움</span><span class="sec-count" style="background:var(--red-bg);color:var(--red);">전체 공개</span></div>
+    <div class="allergy-note">🇺🇸 보스턴 소아과 기준 — <strong>"일찍 노출할수록 알러지 예방에 도움된다"</strong><br>하루 하나씩 · 2~3일 체크 · 알러지 약 미리 처방받기 필수</div>
     <div class="food-grid">
-      <div class="food-item cat-allergy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥚</span><div class="food-info"><div class="food-name">달걀</div><div class="food-name-en">Egg</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-allergy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥜</span><div class="food-info"><div class="food-name">땅콩버터</div><div class="food-name-en">Peanut Butter</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-allergy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌰</span><div class="food-info"><div class="food-name">견과류 버터</div><div class="food-name-en">Tree Nut Butter</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-allergy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🐟</span><div class="food-info"><div class="food-name">생선</div><div class="food-name-en">Fish</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-allergy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🦐</span><div class="food-info"><div class="food-name">새우/갑각류</div><div class="food-name-en">Shellfish</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-allergy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥛</span><div class="food-info"><div class="food-name">유제품</div><div class="food-name-en">Milk/Dairy</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-allergy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫘</span><div class="food-info"><div class="food-name">대두</div><div class="food-name-en">Soybean</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-allergy" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌾</span><div class="food-info"><div class="food-name">밀/글루텐</div><div class="food-name-en">Wheat/Gluten</div></div><span class="food-age age-6">6+</span></div>
+      <div class="fi ca" onclick="t(this)"><div class="fchk"></div><span class="fe">🥚</span><div class="fn"><div class="fn-kr">달걀</div><div class="fn-en">Egg</div></div><span class="fage a6">6+</span></div>
+      <div class="fi ca" onclick="t(this)"><div class="fchk"></div><span class="fe">🥜</span><div class="fn"><div class="fn-kr">땅콩버터</div><div class="fn-en">Peanut Butter</div></div><span class="fage a6">6+</span></div>
+      <div class="fi ca" onclick="t(this)"><div class="fchk"></div><span class="fe">🌰</span><div class="fn"><div class="fn-kr">견과류 버터</div><div class="fn-en">Tree Nut Butter</div></div><span class="fage a6">6+</span></div>
+      <div class="fi ca" onclick="t(this)"><div class="fchk"></div><span class="fe">🐟</span><div class="fn"><div class="fn-kr">생선</div><div class="fn-en">Fish</div></div><span class="fage a6">6+</span></div>
+      <div class="fi ca" onclick="t(this)"><div class="fchk"></div><span class="fe">🦐</span><div class="fn"><div class="fn-kr">갑각류</div><div class="fn-en">Shellfish</div></div><span class="fage a6">6+</span></div>
+      <div class="fi ca" onclick="t(this)"><div class="fchk"></div><span class="fe">🥛</span><div class="fn"><div class="fn-kr">유제품</div><div class="fn-en">Dairy</div></div><span class="fage a6">6+</span></div>
+      <div class="fi ca" onclick="t(this)"><div class="fchk"></div><span class="fe">🫘</span><div class="fn"><div class="fn-kr">대두</div><div class="fn-en">Soybean</div></div><span class="fage a6">6+</span></div>
+      <div class="fi ca" onclick="t(this)"><div class="fchk"></div><span class="fe">🌾</span><div class="fn"><div class="fn-kr">밀/글루텐</div><div class="fn-en">Wheat/Gluten</div></div><span class="fage a6">6+</span></div>
     </div>
   </div>
 
-  <!-- 7. 향신료·오일 -->
+  <!-- 향신료 3 -->
   <div class="section">
-    <div class="section-header">
-      <span class="section-icon">🫒</span>
-      <span class="section-title">향신료 · 오일</span>
-      <span class="section-count" style="background:var(--purple-bg);color:var(--purple);">11가지</span>
-    </div>
+    <div class="sec-head"><span class="sec-icon">🫒</span><span class="sec-title">향신료 · 오일</span><span class="sec-count" style="background:var(--purple-bg);color:var(--purple);">3가지 공개</span></div>
     <div class="food-grid">
-      <div class="food-item cat-spice" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫒</span><div class="food-info"><div class="food-name">올리브오일</div><div class="food-name-en">Olive Oil</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-spice" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🥥</span><div class="food-info"><div class="food-name">코코넛오일</div><div class="food-name-en">Coconut Oil</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-spice" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌿</span><div class="food-info"><div class="food-name">시나몬</div><div class="food-name-en">Cinnamon</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-spice" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌿</span><div class="food-info"><div class="food-name">바질</div><div class="food-name-en">Basil</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-spice" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌿</span><div class="food-info"><div class="food-name">로즈마리</div><div class="food-name-en">Rosemary</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-spice" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌿</span><div class="food-info"><div class="food-name">타임</div><div class="food-name-en">Thyme</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-spice" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🧄</span><div class="food-info"><div class="food-name">마늘 (소량)</div><div class="food-name-en">Garlic (small)</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-spice" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🫚</span><div class="food-info"><div class="food-name">생강 (소량)</div><div class="food-name-en">Ginger (small)</div></div><span class="food-age age-8">8+</span></div>
-      <div class="food-item cat-spice" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌿</span><div class="food-info"><div class="food-name">오레가노</div><div class="food-name-en">Oregano</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-spice" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🌿</span><div class="food-info"><div class="food-name">딜</div><div class="food-name-en">Dill</div></div><span class="food-age age-6">6+</span></div>
-      <div class="food-item cat-spice" onclick="toggle(this)"><div class="food-check"></div><span class="food-emoji">🟡</span><div class="food-info"><div class="food-name">터메릭</div><div class="food-name-en">Turmeric</div></div><span class="food-age age-6">6+</span></div>
+      <div class="fi cs" onclick="t(this)"><div class="fchk"></div><span class="fe">🫒</span><div class="fn"><div class="fn-kr">올리브오일</div><div class="fn-en">Olive Oil</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cs" onclick="t(this)"><div class="fchk"></div><span class="fe">🌿</span><div class="fn"><div class="fn-kr">시나몬</div><div class="fn-en">Cinnamon</div></div><span class="fage a6">6+</span></div>
+      <div class="fi cs" onclick="t(this)"><div class="fchk"></div><span class="fe">🌿</span><div class="fn"><div class="fn-kr">바질</div><div class="fn-en">Basil</div></div><span class="fage a6">6+</span></div>
+    </div>
+  </div>
+
+  <!-- LOCKED -->
+  <div class="locked">
+    <div class="locked-blur">
+      <div class="food-grid">
+        <div class="fi"><div class="fchk"></div><span class="fe">🍊</span><div class="fn"><div class="fn-kr">귤/오렌지</div></div></div>
+        <div class="fi"><div class="fchk"></div><span class="fe">🍇</span><div class="fn"><div class="fn-kr">포도</div></div></div>
+        <div class="fi"><div class="fchk"></div><span class="fe">🥬</span><div class="fn"><div class="fn-kr">케일</div></div></div>
+        <div class="fi"><div class="fchk"></div><span class="fe">🍅</span><div class="fn"><div class="fn-kr">토마토</div></div></div>
+        <div class="fi"><div class="fchk"></div><span class="fe">🌾</span><div class="fn"><div class="fn-kr">보리</div></div></div>
+        <div class="fi"><div class="fchk"></div><span class="fe">🧀</span><div class="fn"><div class="fn-kr">파마산</div></div></div>
+        <div class="fi"><div class="fchk"></div><span class="fe">🐑</span><div class="fn"><div class="fn-kr">양고기</div></div></div>
+        <div class="fi"><div class="fchk"></div><span class="fe">🥥</span><div class="fn"><div class="fn-kr">코코넛오일</div></div></div>
+      </div>
+    </div>
+    <div class="locked-overlay">
+      <div class="locked-title">📦 이 버전은 50가지까지만 공개예요</div>
+      <div class="locked-sub">전체 101가지 + 아래 내용은 인스타그램 DM으로 받으실 수 있어요</div>
+      <div class="locked-tags">
+        <span class="ltag">✅ 나머지 51가지 전체</span>
+        <span class="ltag">🍳 재료별 조리법 + 손 크기 기준</span>
+        <span class="ltag">📋 리엄이든 12일 실제 식단</span>
+        <span class="ltag">💩 응아 변화 기록</span>
+        <span class="ltag">❌ 실패 케이스</span>
+      </div>
     </div>
   </div>
 
   <!-- 피해야 할 것들 -->
   <div class="section">
-    <div class="section-header">
-      <span class="section-icon">🚫</span>
-      <span class="section-title">12개월 전 피해야 할 것들</span>
-    </div>
+    <div class="sec-head"><span class="sec-icon">🚫</span><span class="sec-title">12개월 전 피해야 할 것들</span></div>
     <div class="avoid-grid">
-      <div class="avoid-item"><div class="avoid-emoji">🍯</div><div><div class="avoid-name">꿀</div><div class="avoid-reason">보툴리눔 독소 위험. 12개월 이후에도 주의</div></div></div>
-      <div class="avoid-item"><div class="avoid-emoji">🧂</div><div><div class="avoid-name">소금·간장</div><div class="avoid-reason">신장이 아직 처리 못 해요</div></div></div>
-      <div class="avoid-item"><div class="avoid-emoji">🍬</div><div><div class="avoid-name">설탕·시럽</div><div class="avoid-reason">단맛 선호도가 고착돼요</div></div></div>
-      <div class="avoid-item"><div class="avoid-emoji">🥛</div><div><div class="avoid-name">우유 (음료로)</div><div class="avoid-reason">요리 재료는 OK. 음료는 12개월 이후</div></div></div>
-      <div class="avoid-item"><div class="avoid-emoji">🍇</div><div><div class="avoid-name">통째로 주는 포도</div><div class="avoid-reason">질식 위험. 반드시 4등분</div></div></div>
-      <div class="avoid-item"><div class="avoid-emoji">🥜</div><div><div class="avoid-name">통 견과류</div><div class="avoid-reason">질식 위험. 버터 형태로만</div></div></div>
-      <div class="avoid-item"><div class="avoid-emoji">🐟</div><div><div class="avoid-name">수은 많은 생선</div><div class="avoid-reason">참치(대형)·황새치·상어 피하기</div></div></div>
-      <div class="avoid-item"><div class="avoid-emoji">🫙</div><div><div class="avoid-name">퓨레·과즙망</div><div class="avoid-reason">다당류→단당류 변환. 씹는 연습 방해</div></div></div>
+      <div class="avoid-item"><div class="avoid-emoji">🍯</div><div><div class="avoid-name">꿀</div><div class="avoid-reason">보툴리눔 독소 위험</div></div></div>
+      <div class="avoid-item"><div class="avoid-emoji">🧂</div><div><div class="avoid-name">소금·간장</div><div class="avoid-reason">신장이 처리 못 해요</div></div></div>
+      <div class="avoid-item"><div class="avoid-emoji">🍬</div><div><div class="avoid-name">설탕·시럽</div><div class="avoid-reason">단맛 선호도 고착</div></div></div>
+      <div class="avoid-item"><div class="avoid-emoji">🥛</div><div><div class="avoid-name">우유 (음료로)</div><div class="avoid-reason">요리용 OK. 음료는 12개월+</div></div></div>
+      <div class="avoid-item"><div class="avoid-emoji">🍇</div><div><div class="avoid-name">통째로 포도</div><div class="avoid-reason">질식 위험. 4등분 필수</div></div></div>
+      <div class="avoid-item"><div class="avoid-emoji">🥜</div><div><div class="avoid-name">통 견과류</div><div class="avoid-reason">질식 위험. 버터 형태만</div></div></div>
     </div>
   </div>
 
   <!-- CTA -->
-  <div class="cta-box">
-    <div class="cta-text">
-      <div class="cta-title">📱 BLW 첫 12일 실제 식단 + 리엄이든 반응 기록</div>
-      <div class="cta-body">인스타그램 댓글에 <strong style="color:#6EE89A;">'BLW'</strong> 남겨주시면 노션 링크 드려요 👇<br>@리엄이든 보스턴 둥이네 | brainxed</div>
+  <div class="cta">
+    <div class="cta-eye">전체 버전 받기</div>
+    <div class="cta-title">나머지 51가지 + 조리법 +<br>리엄이든 실제 기록</div>
+    <div class="cta-sub">팔로우 후 DM으로 요청해주시면 전체 버전 노션 링크 드려요.<br>조리법, 손 크기 기준, 실패 기록 전부 포함이에요.</div>
+    <div class="cta-steps">
+      <div class="cta-step"><div class="cta-step-n">1</div>인스타그램 팔로우</div>
+      <div class="cta-step"><div class="cta-step-n">2</div> DM에 <strong style="color:#6EE89A;">'이유식'</strong> 남기기</div>
+      <div class="cta-step"><div class="cta-step-n">3</div>확인 후 DM으로 전체 버전 링크 발송</div>
     </div>
-    <div class="cta-tag">무료 노션<br>링크 받기 →</div>
+ <a href="https://www.instagram.com/brainxed" target="_blank" class="cta-handle">
+  👉 @리엄이든 보스턴 둥이네 보러가기
+</a>
+    <div class="cta-note">※ 팔로우 후 DM 확인해주세요. 확인 후 보내드려요 (수동 확인이라 시간이 걸리더라도 이해해주세요)</div>
   </div>
 
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
-  <div>
-    <span class="footer-brand">Brainxed</span> · 아기 첫 이유식 101 체크리스트<br>
-    <span>📍 보스턴 | 하버드 의대 교수 아빠 (뇌공학자) × 교육학 박사 엄마 × 쌍둥이</span>
-  </div>
-  <div style="text-align:right;">
-    AAP 2022~2025 · 보스턴 소아과 기준<br>
-    © 2026 Brainxed. All rights reserved.
-  </div>
+  <div><span class="footer-brand">Brainxed</span> · Baby Food Checklist 101</div>
+  <div>© 2026 Brainxed. All rights reserved.</div>
 </div>
 
 <script>
-let checked = new Set();
-const TOTAL = 101;
-
-function toggle(el) {
+const TOTAL=50;
+function t(el){
   el.classList.toggle('checked');
-  const id = el.dataset.id || el.innerText.trim().substring(0,10);
-  if (el.classList.contains('checked')) {
-    checked.add(el);
-  } else {
-    checked.delete(el);
-  }
-  updateProgress();
+  const n=document.querySelectorAll('.fi.checked').length;
+  document.getElementById('pf').style.width=(n/TOTAL*100)+'%';
+  document.getElementById('pc').textContent=n+' / '+TOTAL;
 }
-
-function updateProgress() {
-  const count = document.querySelectorAll('.food-item.checked').length;
-  const pct = Math.round((count / TOTAL) * 100);
-  document.getElementById('progressFill').style.width = pct + '%';
-  document.getElementById('progressCount').textContent = count + ' / ' + TOTAL;
-}
-
-function resetAll() {
-  if (!confirm('체크 기록을 모두 초기화할까요?')) return;
-  document.querySelectorAll('.food-item.checked').forEach(el => el.classList.remove('checked'));
-  updateProgress();
+function resetAll(){
+  if(!confirm('체크 기록을 초기화할까요?'))return;
+  document.querySelectorAll('.fi.checked').forEach(e=>e.classList.remove('checked'));
+  document.getElementById('pf').style.width='0%';
+  document.getElementById('pc').textContent='0 / '+TOTAL;
 }
 </script>
 </body>
